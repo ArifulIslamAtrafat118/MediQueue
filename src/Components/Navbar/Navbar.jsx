@@ -75,12 +75,15 @@ function Navbar() {
             {NavList}
           </ul>
         </div>
-        <NavLink className="text-3xl font-bold block gap-0 cursor-pointer ">
-          <span className="text-blue-500">Medi</span>
-          <span>Que</span>
-          <span className="text-blue-500">u</span>
-          <span>e</span>
-          </NavLink>
+        <div className="flex items-center justify-center">
+                <img src="/src/assets/logo.png " alt="" className="" />
+                <NavLink className="text-3xl font-bold block gap-0 cursor-pointer ">
+                  <span className="text-blue-500">Medi</span>
+                  <span>Que</span>
+                  <span className="text-blue-500">u</span>
+                  <span>e</span>
+                </NavLink>
+              </div>
         {/* <figure>
           <img
             className="h-10"

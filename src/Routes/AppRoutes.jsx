@@ -18,7 +18,8 @@ export const router = createBrowserRouter(
                     Component: Home,
                 },
                 {
-                    path: '/doctor-profile',
+                    path: '/doctors-profile/:registration_number',
+                    loader : ({params})=>fetch('/doctorsData.json'),
                     Component: DoctorProfileDetails,
                 },
                 {

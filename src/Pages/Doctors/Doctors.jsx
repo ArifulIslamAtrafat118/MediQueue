@@ -23,7 +23,7 @@ function Doctors({doctorsData}) {
   return (
     <div 
     ref={doctorsRef}
-    className='pt-12 lg:pt-20'>
+    className='mb-10 pt-12 lg:pt-20'>
         <div className="text-center space-y-5">
             <h1 className="text-4xl font-semibold">Our Best Doctors</h1>
             <p className="text-gray-600 text-lg w-3/4 mx-auto">
