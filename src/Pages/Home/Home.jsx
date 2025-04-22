@@ -4,7 +4,7 @@ import Banner from '../../Components/Banner/Banner'
 import { useLoaderData } from 'react-router'
 
 function Home() {
-    const doctorsData = useLoaderData();;
+    const doctorsData = useLoaderData();
   return (
     <div>
         <Banner></Banner>

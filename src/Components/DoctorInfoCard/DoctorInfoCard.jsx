@@ -15,7 +15,7 @@ function DoctorInfoCard({doctorData}) {
             />
         </div>
         <div className="space-y-3">
-            <div className="flex gap-3">
+            <div className="flex flex-wrap gap-3">
                 <button className="btn border-1 rounded-full border-green-500 bg-green-50  text-green-500 text-xl">Available</button>
                 <button className="btn border-1 rounded-full border-blue-500  bg-blue-50 text-blue-500 text-xl">{experience} Years Experience</button>
             </div>

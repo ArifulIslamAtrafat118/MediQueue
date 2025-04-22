@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": "What is useState and how does it work in React?",
+      "answer": "useState is a Hook in React that lets you add state to functional components. When you call useState, it returns a pair: the current state value and a function to update it. When the state changes, the component re-renders to reflect the updated state.",
+      "added_at": "2025-04-01"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a Hook used to handle side effects in functional components, such as fetching data, updating the DOM, or setting up subscriptions. It runs after the render and can be configured to run on specific dependencies, similar to lifecycle methods like componentDidMount and componentDidUpdate.",
+      "added_at": "2024-05-02"
+    },
+    {
+      "id": 3,
+      "question": "What is a custom hook in React and when should you use one?",
+      "answer": "A custom hook in React is a JavaScript function that starts with 'use' and allows you to extract and reuse stateful logic between components. You should use a custom hook when you find yourself repeating the same logic across multiple components, such as form handling or fetching data.",
+      "added_at": "2024-04-09"
+    },
+    {
+      "id": 4,
+      "question": "Difference between controlled and uncontrolled components? Which one is better?",
+      "answer": "Controlled components are form elements in React where the form data is handled by the component’s state using useState or another state management tool. Uncontrolled components store their own state internally using refs. Controlled components give you more control and are recommended in most cases, especially for validation and dynamic inputs.",
+      "added_at": "2024-08-04"
+    },
+    {
+      "id": 5,
+      "question": "Tell us something about useFormStatus() (explore and explain)",
+      "answer": "useFormStatus is a React Hook provided by React's experimental form API (often used with server actions in React 18+). It helps track the state of a form submission, such as whether the form is pending or has errors. This is useful for disabling buttons during submission or showing loading indicators. It simplifies UX improvements around form submissions without relying on manual state handling.",
+      "added_at": "2025-04-05"
+    }
+  ]
+  
