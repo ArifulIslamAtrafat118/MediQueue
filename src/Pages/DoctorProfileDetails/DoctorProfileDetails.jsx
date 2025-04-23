@@ -4,6 +4,7 @@ import { Link, useLoaderData, useParams } from "react-router";
 import PrimaryBtn from "../../Components/Buttons/PrimaryBtn";
 import { IoIosWarning } from "react-icons/io";
 import { TbCirclePlus } from "react-icons/tb";
+import {  addToDB } from "../../utils/handleBookings";
 
 function DoctorProfileDetails() {
   const doctorsData = useLoaderData();
@@ -17,6 +18,7 @@ function DoctorProfileDetails() {
 
   if (doctorData) {
     const {
+      id,
       name,
       doctor_image,
       registration_number,
@@ -24,6 +26,10 @@ function DoctorProfileDetails() {
       consultation_fee,
       working_at,
     } = doctorData;
+    const handleBookings = id =>{
+      // console.log(id);
+      addToDB(id);
+    }
     return (
       <div>
         <div className=" mt-20 mb-10 bg-white shadow-lg rounded-3xl py-10 px-5 md:px-20 text-center ">
@@ -90,7 +96,10 @@ function DoctorProfileDetails() {
               cooperation.
             </span>
           </p>
-          <PrimaryBtn className="w-full ">Book Appointment Now</PrimaryBtn>
+          <Link to={'/bookings'}
+          >
+            <PrimaryBtn onClick={()=>handleBookings(id)}>Book Appointment Now</PrimaryBtn>
+          </Link>
         </div>
       </div>
     );

@@ -76,7 +76,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="flex items-center justify-center">
-                <img src="/src/assets/logo.png " alt="" className="" />
+                <img src="/logo.png " alt="" className="" />
                 <NavLink className="text-3xl font-bold block gap-0 cursor-pointer ">
                   <span className="text-blue-500">Medi</span>
                   <span>Que</span>

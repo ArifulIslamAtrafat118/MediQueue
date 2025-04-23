@@ -43,10 +43,12 @@ function Doctors({doctorsData}) {
                     </DoctorInfoCard>)
             }
         </div>
-        <PrimaryBtn 
+       <div className="flex items-center justify-center">
+       <PrimaryBtn 
         onClick={()=>{{setShowAll(prev=>!prev);
             if(showAll)handleScroll();
-        }}}>{showAll?'Show Less':'Show All'}</PrimaryBtn>
+        }}}>{showAll?'Show Less':'View All Doctors'}</PrimaryBtn>
+       </div>
     </div>
   )
 }

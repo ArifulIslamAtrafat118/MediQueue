@@ -25,7 +25,7 @@ function Banner() {
             <figure>
                 <img 
                 className='w-full h-[20rem] md:h-[25rem]'
-                src="/src/assets/banner-img-1.png" alt="Banner image" 
+                src="/banner-img-1.png" alt="Banner image" 
                 />
             </figure>
         </div>
