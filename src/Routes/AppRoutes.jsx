@@ -5,6 +5,7 @@ import Blogs from "../Pages/Blogs/Blogs";
 import DoctorProfileDetails from "../Pages/DoctorProfileDetails/DoctorProfileDetails";
 import ErrorPage from "../Pages/Errors/ErrorPage";
 import MyBookings from "../Pages/MyBookings/MyBookings";
+import LoadingSpinner from "../Components/LoadingSpinner/LoadingSpinner";
 
 export const router = createBrowserRouter(
     [
@@ -33,7 +34,11 @@ export const router = createBrowserRouter(
                     loader: ()=>fetch('../doctorsData.json'),
                     Component: MyBookings,
                 }
-            ]
+            ],
+           
         }
-    ]
+    ],
+    {
+        fallbackElement: <LoadingSpinner></LoadingSpinner>,
+    }
 );
