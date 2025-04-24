@@ -5,6 +5,7 @@ function ShowBookedDoctor({bookedDoctorData, onUpdate}) {
     const {
         id,
         name,
+        education,
         speciality,
         doctor_image,
         registration_number,
@@ -21,6 +22,7 @@ function ShowBookedDoctor({bookedDoctorData, onUpdate}) {
           <div className="md:flex items-center justify-between">
             <div className="">
               <h2 className="text-xl font-bold">{name}</h2>
+              <div className="flex flex-wrap">{education.map((degree,index)=><span key={index} className='text-gray-500 lg:text-lg'>{degree}/</span>)}</div>
               <p className="">{`(${registration_number})`}</p>
               <p className="">{speciality}</p>
             </div>

@@ -20,6 +20,8 @@ function DoctorProfileDetails() {
     const {
       id,
       name,
+      education,
+      speciality,
       doctor_image,
       registration_number,
       availability,
@@ -51,12 +53,15 @@ function DoctorProfileDetails() {
           </div>
           <div className="col-span-2 flex flex-col justify-between space-y-5 md:space-y-0">
             <h1 className="text-3xl font-semibold">{name}</h1>
+            <div className="flex flex-wrap">{education.map((degree,index)=><span key={index} className='text-gray-500 lg:text-lg'>{degree}/</span>)}</div>
             <p className="">Working at: </p>
             <p className="font-semibold">{working_at}</p>
             <p className="text-gray-500 lg:text-lg flex items-center gap-3">
               <FaRegRegistered />
               <span>Reg No: {registration_number}</span>
             </p>
+            <p className='text-gray-500 lg:text-lg'>{speciality}</p>
+
             <div className="flex flex-wrap gap-4 md:gap-6">
               <span className="font-bold">Availability</span>{" "}
               {availability.map((day, index) => (

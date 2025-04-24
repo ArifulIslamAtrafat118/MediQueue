@@ -22,9 +22,13 @@ function Banner() {
         <PrimaryBtn>Search Now</PrimaryBtn>
         </div>
         <div className=" ">
-            <figure>
+            <figure className='md:flex items-center gap-4'>
                 <img 
-                className='w-full h-[20rem] md:h-[25rem]'
+                className='w-1/2 h-[15rem] md:h-[20rem]'
+                src="/banner-img-1.png" alt="Banner image" 
+                />
+                <img 
+                className='w-1/2 h-[15rem] md:h-[20rem]'
                 src="/banner-img-1.png" alt="Banner image" 
                 />
             </figure>

@@ -23,6 +23,7 @@ function DoctorInfoCard({doctorData}) {
             {education.map((degree,index)=><span key={index} className='text-gray-500 lg:text-lg'>{degree}/</span>)}
             <div className="border-1 border-b-gray-300 w-full border-dashed"></div>
             <p className='text-gray-500 lg:text-lg'>Reg No: {registration_number}</p>
+            <p className='text-gray-500 lg:text-lg'>{speciality}</p>
             <Link to={`/doctors-profile/${registration_number}`}>
             <button 
             className='btn w-full border-1 rounded-full border-blue-500 bg-white text-blue-500 text-xl'>
