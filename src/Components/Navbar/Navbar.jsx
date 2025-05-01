@@ -8,7 +8,7 @@ function Navbar() {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : ""
+            isActive ? "border-2 border-blue-500 px-5" : ""
           }
           to={"/"}
         >
@@ -18,7 +18,7 @@ function Navbar() {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : ""
+            isActive ? "border-2 border-blue-500" : ""
           }
           to={"/bookings"}
         >
@@ -28,7 +28,7 @@ function Navbar() {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : ""
+            isActive ? "border-2 border-blue-500 md:px-7" : ""
           }
           to={"/blogs"}
         >
@@ -38,7 +38,7 @@ function Navbar() {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "border-b-2 border-blue-500" : ""
+            isActive ? "border-2 border-blue-500 md:px-5" : ""
           }
           to={"/contacts"}
         >
@@ -48,7 +48,7 @@ function Navbar() {
     </>
   );
   return (
-    <div className="navbar fixed top-0 bg-transparent  shadow-sm">
+    <div className="navbar fixed top-0 z-50 bg-blue-400/30 backdrop-blur-sm shadow-sm  ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -76,7 +76,7 @@ function Navbar() {
           </ul>
         </div>
         <div className="flex items-center justify-center">
-                <img src="/logo.png " alt="" className="" />
+                <img src="/logo.png " alt="" className="hidden md:block" />
                 <NavLink className="text-3xl font-bold block gap-0 cursor-pointer ">
                   <span className="text-blue-500">Medi</span>
                   <span>Que</span>
@@ -95,7 +95,7 @@ function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{NavList}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end hidden md:flex">
         <PrimaryBtn>Emergency</PrimaryBtn>
       </div>
     </div>
