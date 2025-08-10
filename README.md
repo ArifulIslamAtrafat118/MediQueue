@@ -7,4 +7,4 @@ Project Name: MediQueue
 🙋‍♂️ Author
 GitHub: https://github.com/ArifulIslamAtrafat118
 
-LinkedIn: www.linkedin.com/in/ariful-islam-arafat-870617290
+LinkedIn: www.linkedin.com/in/ariful-islam-arafat
